@@ -8,3 +8,6 @@ RUN rm ~/.bashrc
 RUN ~/.dotfiles/install
 
 RUN git clone https://github.com/VundleVim/Vundle.vim ~/.vim
+
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get install -y nodejs
